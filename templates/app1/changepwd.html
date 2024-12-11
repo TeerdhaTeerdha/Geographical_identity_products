@@ -1,0 +1,37 @@
+{%load static%}
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form Design | CodeLab</title>
+      <link rel="stylesheet" href="{%static 'css/signin.css'%}">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form action="/changepwd">
+            <div class="field">
+               <input type="text" name="uname" required>
+               <label>User Name</label>
+            </div>
+            <div class="field">
+               <input type="password" name="opwd" required>
+               <label>Old Password</label>
+            </div>
+            <div class="field">
+                <input type="password" name="npwd" required>
+                <label>New Password</label>
+             </div>
+            <div class="field">
+               <input type="submit" value="change">
+            </div>
+            <div class="signup-link">
+                remember password? <a href="/signin_temp">Signin now</a>
+             </div>
+         </form>
+      </div>
+   </body>
+</html>
